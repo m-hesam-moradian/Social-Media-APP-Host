@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/");
+      navigate("Social-Media-APP-Host/");
     } catch (err) {
       setErr(true);
     }
@@ -31,7 +31,8 @@ const Login = () => {
           {err && <span>Something went wrong</span>}
         </form>
         <p>
-          You don't have an account? <Link to="/register">Register</Link>
+          You don't have an account?{" "}
+          <Link to="Social-Media-APP-Host/register">Register</Link>
         </p>
       </div>
     </div>

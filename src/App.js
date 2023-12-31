@@ -11,7 +11,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/login" />;
+      return <Navigate to="Social-Media-APP-Host/login" />;
     }
 
     return children
@@ -20,7 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
+        <Route path="Social-Media-APP-Host/">
           <Route
             index
             element={
